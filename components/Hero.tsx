@@ -1,0 +1,55 @@
+import React from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+
+export const Hero: React.FC = () => {
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]); // Fade out text on scroll
+
+  return (
+    <div id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-nude-800">
+      
+      {/* Background Gradient Overlays for depth */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-nude-800/20 via-transparent to-nude-800" />
+      <div className="absolute inset-0 z-0 bg-nude-800/20" />
+
+      {/* Content */}
+      <motion.div 
+        style={{ opacity }}
+        className="relative z-10 w-full px-6 md:px-4 max-w-5xl mx-auto text-white flex flex-col items-center justify-center text-center"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="mb-8 md:mb-10"
+        >
+          {/* Logo Increased 1.5x */}
+          <img 
+            src="https://i.ibb.co/mrBDG8NX/1.png" 
+            alt="Eliana Maria - Ateliê de Beleza" 
+            className="h-36 md:h-48 w-auto object-contain drop-shadow-lg"
+          />
+        </motion.div>
+        
+        <motion.h1 
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
+          className="font-serif text-3xl sm:text-4xl md:text-7xl lg:text-8xl leading-snug md:leading-tight mb-8 drop-shadow-2xl text-white max-w-4xl mx-auto"
+        >
+          Seu Dia da Noiva merece ser <br className="md:hidden" />
+          <span className="italic text-rose-100 font-light">leve</span>, especial e inesquecível
+        </motion.h1>
+
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="font-sans text-base md:text-xl font-light max-w-lg md:max-w-2xl mx-auto text-stone-100 leading-relaxed drop-shadow-md"
+        >
+          Uma experiência de acolhimento, beleza e sofisticação para o momento mais importante da sua vida.
+        </motion.p>
+      </motion.div>
+    </div>
+  );
+};
