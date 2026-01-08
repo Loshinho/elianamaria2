@@ -18,7 +18,7 @@ export const Navigation: React.FC = () => {
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault(); // Impede que o navegador tente mudar a URL, evitando o erro 404
+    e.preventDefault();
     setIsOpen(false);
     
     const targetId = href.replace('#', '');
@@ -50,14 +50,14 @@ export const Navigation: React.FC = () => {
 
   return (
     <>
-      {/* Toggle Button - Updated for high contrast on all backgrounds */}
+      {/* Toggle Button - Reduced size and padding */}
       <motion.button
         onClick={toggleOpen}
-        className="fixed top-6 right-6 z-50 p-3 bg-nude-900/80 backdrop-blur-md border border-white/10 rounded-full text-white shadow-xl hover:bg-nude-900 transition-colors"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        className="fixed top-4 right-4 z-50 p-2.5 bg-nude-900/80 backdrop-blur-md border border-white/10 rounded-full text-white shadow-xl hover:bg-nude-900 transition-colors"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {isOpen ? <X size={20} /> : <Menu size={20} />}
       </motion.button>
 
       {/* Backdrop */}
@@ -78,29 +78,29 @@ export const Navigation: React.FC = () => {
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
-        className="fixed top-0 right-0 bottom-0 w-80 bg-nude-900/95 backdrop-blur-xl z-40 border-l border-white/10 shadow-2xl flex flex-col justify-center p-10"
+        className="fixed top-0 right-0 bottom-0 w-72 bg-nude-900/95 backdrop-blur-xl z-40 border-l border-white/10 shadow-2xl flex flex-col justify-center p-8"
       >
-        <div className="flex flex-col space-y-6">
-          <div className="mb-8 text-center border-b border-white/10 pb-6 flex justify-center">
-            {/* Logo Increased 1.5x */}
+        <div className="flex flex-col space-y-5">
+          <div className="mb-6 text-center border-b border-white/10 pb-5 flex justify-center">
+            {/* Logo size reduced */}
             <img 
               src="https://i.ibb.co/mrBDG8NX/1.png" 
               alt="Eliana Maria - Ateliê de Beleza" 
-              className="h-36 md:h-48 w-auto object-contain"
+              className="h-24 md:h-32 w-auto object-contain"
             />
           </div>
 
-          <ul className="flex flex-col space-y-4">
+          <ul className="flex flex-col space-y-3">
             {menuItems.map((item, idx) => (
               <motion.li 
                 key={idx}
-                whileHover={{ x: 10 }}
+                whileHover={{ x: 8 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <a 
                   href={item.href} 
                   onClick={(e) => handleLinkClick(e, item.href)}
-                  className="text-nude-100 font-serif text-xl hover:text-gold-300 transition-colors block"
+                  className="text-nude-100 font-serif text-lg hover:text-gold-300 transition-colors block"
                 >
                   {item.title}
                 </a>
@@ -108,22 +108,22 @@ export const Navigation: React.FC = () => {
             ))}
           </ul>
 
-          <div className="mt-12 pt-8 border-t border-white/10 flex justify-center gap-6">
+          <div className="mt-8 pt-6 border-t border-white/10 flex justify-center gap-5">
             <motion.a 
               href="https://wa.me/5531999897764" 
               target="_blank"
-              whileHover={{ scale: 1.2, rotate: 10 }}
+              whileHover={{ scale: 1.1, rotate: 10 }}
               className="text-nude-300 hover:text-gold-400"
             >
-              <Phone size={24} />
+              <Phone size={20} />
             </motion.a>
             <motion.a 
               href="https://www.instagram.com/lilica_ateliedebeleza/" 
               target="_blank"
-              whileHover={{ scale: 1.2, rotate: -10 }}
+              whileHover={{ scale: 1.1, rotate: -10 }}
               className="text-nude-300 hover:text-rose-400"
             >
-              <Instagram size={24} />
+              <Instagram size={20} />
             </motion.a>
           </div>
         </div>
