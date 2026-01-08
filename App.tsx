@@ -1,15 +1,15 @@
 import React from 'react';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { MainPackage } from './components/MainPackage';
-import { Addons } from './components/Addons';
-import { Bridesmaids } from './components/Bridesmaids';
-import { Gallery } from './components/Gallery';
-import { Info } from './components/Info';
-import { Contact } from './components/Contact';
-import { Navigation } from './components/Navigation';
-import { CartProvider } from './context/CartContext';
-import { CartDrawer } from './components/CartDrawer';
+import { Hero } from './components/Hero.tsx';
+import { About } from './components/About.tsx';
+import { MainPackage } from './components/MainPackage.tsx';
+import { Addons } from './components/Addons.tsx';
+import { Bridesmaids } from './components/Bridesmaids.tsx';
+import { Gallery } from './components/Gallery.tsx';
+import { Info } from './components/Info.tsx';
+import { Contact } from './components/Contact.tsx';
+import { Navigation } from './components/Navigation.tsx';
+import { CartProvider } from './context/CartContext.tsx';
+import { CartDrawer } from './components/CartDrawer.tsx';
 
 const App: React.FC = () => {
   return (
