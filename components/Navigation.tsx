@@ -10,7 +10,7 @@ export const Navigation: React.FC = () => {
   const menuItems = [
     { title: "Início", href: "#home" },
     { title: "O Conceito", href: "#about" },
-    { title: "Pacote Principal", href: "#package" },
+    { title: "Dia da Noiva", href: "#package" },
     { title: "Adicionais", href: "#addons" },
     { title: "Madrinhas", href: "#bridesmaids" },
     { title: "Informações", href: "#info" },

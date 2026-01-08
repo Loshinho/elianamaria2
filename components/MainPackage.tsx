@@ -1,7 +1,7 @@
 import React from 'react';
-import { Reveal } from './ui/Reveal';
+import { Reveal } from './ui/Reveal.tsx';
 import { CheckCircle2, Star, Plus } from 'lucide-react';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/CartContext.tsx';
 
 export const MainPackage: React.FC = () => {
   const { addToCart, items } = useCart();
@@ -17,7 +17,7 @@ export const MainPackage: React.FC = () => {
   const handleAddToCart = () => {
     addToCart({
       id: 'pacote-principal',
-      name: 'Pacote Principal (Dia da Noiva)',
+      name: 'Dia da Noiva',
       category: 'package'
     });
   };
@@ -48,7 +48,7 @@ export const MainPackage: React.FC = () => {
                        <Star className="text-gold-200 fill-gold-200" size={14} />
                        <span className="uppercase tracking-widest text-[10px] font-bold text-gold-100">Mais Procurado</span>
                     </div>
-                    <h3 className="font-serif text-3xl md:text-4xl text-nude-50 mb-2">Pacote Principal</h3>
+                    <h3 className="font-serif text-3xl md:text-4xl text-nude-50 mb-2">Dia da Noiva</h3>
                     <p className="text-nude-200 font-light text-sm tracking-wide">A escolha perfeita para o seu grande dia.</p>
                   </div>
                 </div>
@@ -56,11 +56,11 @@ export const MainPackage: React.FC = () => {
                 {/* Details Side */}
                 <div className="md:w-7/12 p-8 md:p-14 flex flex-col justify-center bg-white relative z-10">
                   <div className="mb-10 text-center md:text-left">
-                     <span className="block text-sm text-nude-400 font-bold tracking-widest uppercase mb-2">Investimento</span>
+                     <span className="block text-xs text-nude-400 font-bold tracking-widest uppercase mb-2">Investimento</span>
                      <div className="flex items-baseline justify-center md:justify-start gap-1">
-                        <span className="text-2xl text-nude-700 font-serif">R$</span>
-                        <span className="text-5xl md:text-6xl font-serif text-nude-800">1.200</span>
-                        <span className="text-xl text-nude-700 font-serif">,00</span>
+                        <span className="text-lg text-nude-700 font-serif">R$</span>
+                        <span className="text-3xl md:text-4xl font-serif text-nude-800">1.200</span>
+                        <span className="text-sm text-nude-700 font-serif">,00</span>
                      </div>
                   </div>
 
