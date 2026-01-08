@@ -37,7 +37,7 @@ export const MainPackage: React.FC = () => {
                 {/* Visual Side */}
                 <div className="md:w-5/12 bg-nude-800 relative overflow-hidden h-72 md:h-auto group">
                   <img 
-                    src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&crop" 
+                    src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop" 
                     alt="Maquiagem de Noiva" 
                     className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
                   />
@@ -55,19 +55,23 @@ export const MainPackage: React.FC = () => {
 
                 {/* Details Side */}
                 <div className="md:w-7/12 p-8 md:p-14 flex flex-col justify-center bg-white relative z-10">
-                  <ul className="space-y-5 mb-12">
+                  <ul className="space-y-5 mb-8">
                     {includes.map((item, index) => (
                       <li key={index} className="flex items-start text-stone-700 group">
                         <CheckCircle2 className="w-5 h-5 text-nude-400 mt-1 mr-4 flex-shrink-0 group-hover:text-gold-400 transition-colors" />
                         <span className="font-light text-lg text-nude-900">{item}</span>
                       </li>
                     ))}
-                    {/* New Investment item following the same style but with specific color */}
-                    <li className="flex items-start text-[#262626] group">
-                      <CheckCircle2 className="w-5 h-5 text-nude-400 mt-1 mr-4 flex-shrink-0 group-hover:text-gold-400 transition-colors" />
-                      <span className="font-medium text-lg">Investimento para essa experiência: R$ 1.200,00</span>
-                    </li>
                   </ul>
+
+                  <div className="mb-10 text-center md:text-left">
+                     <span className="block text-[11px] text-nude-400 font-bold tracking-widest uppercase mb-3">Investimento para essa experiência:</span>
+                     <div className="flex items-baseline justify-center md:justify-start gap-1">
+                        <span className="text-sm text-nude-700 font-serif">R$</span>
+                        <span className="text-3xl md:text-4xl font-serif text-nude-800">1.200</span>
+                        <span className="text-sm text-nude-700 font-serif">,00</span>
+                     </div>
+                  </div>
 
                   <p className="text-nude-400 text-sm italic mb-8 border-l-2 border-nude-200 pl-4 py-1 leading-relaxed">
                     “Todo o atendimento é realizado com atenção total à noiva, respeitando horários, conforto e excelência.”
