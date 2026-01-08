@@ -40,15 +40,6 @@ export const Hero: React.FC = () => {
           Seu Dia da Noiva merece ser <br className="md:hidden" />
           <span className="italic text-rose-100 font-light">leve</span>, especial e inesquecível
         </motion.h1>
-
-        <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="font-sans text-sm md:text-base font-light max-w-lg md:max-w-xl mx-auto text-stone-100 leading-relaxed drop-shadow-md"
-        >
-          Uma experiência de acolhimento, beleza e sofisticação para o momento mais importante da sua vida.
-        </motion.p>
       </motion.div>
     </div>
   );
