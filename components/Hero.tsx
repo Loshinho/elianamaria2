@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-          className="font-serif text-3xl sm:text-4xl md:text-7xl lg:text-8xl leading-snug md:leading-tight mb-8 drop-shadow-2xl text-white max-w-4xl mx-auto"
+          className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug md:leading-tight mb-8 drop-shadow-2xl text-white max-w-3xl mx-auto"
         >
           Seu Dia da Noiva merece ser <br className="md:hidden" />
           <span className="italic text-rose-100 font-light">leve</span>, especial e inesquecível
@@ -45,7 +45,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="font-sans text-base md:text-xl font-light max-w-lg md:max-w-2xl mx-auto text-stone-100 leading-relaxed drop-shadow-md"
+          className="font-sans text-base md:text-lg font-light max-w-lg md:max-w-2xl mx-auto text-stone-100 leading-relaxed drop-shadow-md"
         >
           Uma experiência de acolhimento, beleza e sofisticação para o momento mais importante da sua vida.
         </motion.p>

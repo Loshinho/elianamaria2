@@ -1,5 +1,5 @@
 import React from 'react';
-import { Reveal } from './ui/Reveal';
+import { Reveal } from './ui/Reveal.tsx';
 import { Instagram, Phone } from 'lucide-react';
 
 export const Contact: React.FC = () => {
@@ -74,7 +74,7 @@ export const Contact: React.FC = () => {
             <img 
               src="https://i.ibb.co/ZzKY56YQ/galantis-07.png" 
               alt="Galantis" 
-              className="h-5 w-auto"
+              className="h-20 w-auto"
             />
           </div>
         </div>
