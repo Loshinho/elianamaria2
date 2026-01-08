@@ -70,7 +70,6 @@ export const Contact: React.FC = () => {
           </p>
           
           <div className="opacity-60 hover:opacity-100 transition-opacity flex flex-col items-center gap-2">
-            <span className="text-[10px] font-light text-nude-400 uppercase tracking-widest">developed by</span>
             <img 
               src="https://i.ibb.co/ZzKY56YQ/galantis-07.png" 
               alt="Galantis" 
