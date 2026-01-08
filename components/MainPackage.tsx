@@ -56,11 +56,11 @@ export const MainPackage: React.FC = () => {
                 {/* Details Side */}
                 <div className="md:w-7/12 p-8 md:p-14 flex flex-col justify-center bg-white relative z-10">
                   <div className="mb-10 text-center md:text-left">
-                     <span className="block text-xs text-nude-400 font-bold tracking-widest uppercase mb-2">Investimento</span>
+                     <span className="block text-[10px] text-nude-400 font-bold tracking-widest uppercase mb-2">Investimento</span>
                      <div className="flex items-baseline justify-center md:justify-start gap-1">
-                        <span className="text-lg text-nude-700 font-serif">R$</span>
-                        <span className="text-3xl md:text-4xl font-serif text-nude-800">1.200</span>
-                        <span className="text-sm text-nude-700 font-serif">,00</span>
+                        <span className="text-2xl text-nude-700 font-serif">R$</span>
+                        <span className="text-5xl md:text-6xl font-serif text-nude-800">1.200</span>
+                        <span className="text-xl text-nude-700 font-serif">,00</span>
                      </div>
                   </div>
 
@@ -74,7 +74,7 @@ export const MainPackage: React.FC = () => {
                   </ul>
 
                   <p className="text-nude-400 text-sm italic mb-8 border-l-2 border-nude-200 pl-4 py-1 leading-relaxed">
-                    “Todo o atendimento é realizado com atenção total à noiva, respeitando horários, conforto e excelência.”
+                    “Todo o atendimento é realizado com attention total à noiva, respeitando horários, conforto e excelência.”
                   </p>
 
                   <button 
