@@ -6,11 +6,18 @@ export const Hero: React.FC = () => {
   const opacity = useTransform(scrollY, [0, 300], [1, 0]); // Fade out text on scroll
 
   return (
-    <div id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-nude-800">
+    <div id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-stone-900">
       
-      {/* Background Gradient Overlays for depth */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-nude-800/20 via-transparent to-nude-800" />
-      <div className="absolute inset-0 z-0 bg-nude-800/20" />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://i.ibb.co/99vV5Bzn/IMG-20260109-WA0133.jpg" 
+          alt="Fundo Ateliê" 
+          className="w-full h-full object-cover opacity-60"
+        />
+        {/* Dark Overlays for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-stone-900/80" />
+      </div>
 
       {/* Content */}
       <motion.div 
@@ -23,7 +30,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="mb-8 md:mb-10"
         >
-          {/* Logo Increased 1.5x */}
+          {/* Logo */}
           <img 
             src="https://i.ibb.co/mrBDG8NX/1.png" 
             alt="Eliana Maria - Ateliê de Beleza" 
