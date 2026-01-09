@@ -16,7 +16,7 @@ export const Location: React.FC = () => {
           <div className="lg:w-1/2 space-y-8">
             <Reveal>
               <span className="text-[10px] text-nude-400 font-bold tracking-[0.3em] uppercase block mb-4">Onde Estamos</span>
-              <h2 className="font-serif text-4xl md:text-5xl text-nude-900 leading-tight">
+              <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-nude-900 leading-tight">
                 Um refúgio de beleza no <br />
                 <span className="italic font-light">coração de Santa Maria</span>
               </h2>
@@ -30,7 +30,7 @@ export const Location: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-serif text-xl text-nude-800 mb-1">Nosso Endereço</h4>
-                    <p className="text-nude-600 font-light leading-relaxed">
+                    <p className="text-nude-600 font-light leading-relaxed text-sm md:text-base">
                       R. Narcisa, 50 - Centro<br />
                       Santa Maria de Itabira - MG<br />
                       CEP: 35910-000
@@ -44,7 +44,7 @@ export const Location: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-serif text-xl text-nude-800 mb-1">Localização Privilegiada</h4>
-                    <p className="text-nude-600 font-light leading-relaxed">
+                    <p className="text-nude-600 font-light leading-relaxed text-sm md:text-base">
                       Estamos a menos de 300 metros da <br />
                       <strong>Igreja Matriz de Nossa Senhora do Rosário</strong>.
                     </p>
@@ -61,10 +61,10 @@ export const Location: React.FC = () => {
               </div>
             </Reveal>
 
-            {/* Non-interactive Vimeo Video in Loop */}
+            {/* Non-interactive Vertical Vimeo Video in Loop */}
             <Reveal delay={0.4}>
-              <div className="w-full rounded-2xl overflow-hidden shadow-2xl border border-nude-100 bg-nude-50">
-                <div style={{padding:'56.25% 0 0 0', position:'relative'}}>
+              <div className="w-full max-w-[300px] rounded-2xl overflow-hidden shadow-2xl border border-nude-100 bg-nude-50">
+                <div style={{padding:'177.78% 0 0 0', position:'relative'}}>
                   <iframe 
                     src="https://player.vimeo.com/video/1152745252?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1&controls=0" 
                     frameBorder="0" 
@@ -77,8 +77,8 @@ export const Location: React.FC = () => {
             </Reveal>
           </div>
 
-          {/* Maps Side */}
-          <div className="lg:w-1/2 w-full h-[500px] md:h-[600px] rounded-3xl overflow-hidden shadow-inner-xl border-8 border-nude-50/50">
+          {/* Maps Side - Size reduced by half */}
+          <div className="lg:w-1/3 w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden shadow-inner-xl border-8 border-nude-50/50">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.13050188172357!2d-43.11473639281328!3d-19.451771055873227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa579910bcab84f%3A0xed69c62f169cb956!2sELIANA%20ATELIE%20DE%20BELEZA%20SMI!5e0!3m2!1spt-BR!2sbr!4v1767929078536!5m2!1spt-BR!2sbr" 
               width="100%" 
