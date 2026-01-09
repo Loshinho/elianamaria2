@@ -29,7 +29,6 @@ export const MainPackage: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           <Reveal width="100%">
-            {/* Removed rounded-[2rem] to make it sharp (no corners) as requested */}
             <div className="bg-white shadow-2xl overflow-hidden border border-nude-200 relative">
               
               <div className="flex flex-col md:flex-row h-full">
@@ -37,7 +36,7 @@ export const MainPackage: React.FC = () => {
                 {/* Visual Side */}
                 <div className="md:w-5/12 bg-nude-800 relative overflow-hidden h-72 md:h-auto group">
                   <img 
-                    src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000&auto=format&fit=crop" 
+                    src="https://i.ibb.co/BdnM1yr/SAU04329.jpg" 
                     alt="Maquiagem de Noiva" 
                     className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
                   />

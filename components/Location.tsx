@@ -64,7 +64,7 @@ export const Location: React.FC = () => {
 
           {/* Maps and Video Side */}
           <div className="lg:w-1/3 w-full space-y-8 flex flex-col items-center">
-            {/* Maps Side - Size reduced by half */}
+            {/* Maps Side */}
             <div className="w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden shadow-inner-xl border-8 border-nude-50/50">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.13050188172357!2d-43.11473639281328!3d-19.451771055873227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa579910bcab84f%3A0xed69c62f169cb956!2sELIANA%20ATELIE%20DE%20BELEZA%20SMI!5e0!3m2!1spt-BR!2sbr!4v1767929078536!5m2!1spt-BR!2sbr" 
@@ -78,12 +78,12 @@ export const Location: React.FC = () => {
               ></iframe>
             </div>
 
-            {/* Non-interactive Vertical Vimeo Video in Loop - Style matched to footer video */}
+            {/* Non-interactive Vertical Vimeo Video in Loop */}
             <Reveal delay={0.4} width="100%">
               <div className="w-full max-w-[300px] mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-nude-700 bg-black">
                 <div style={{padding:'177.78% 0 0 0', position:'relative'}}>
                   <iframe 
-                    src="https://player.vimeo.com/video/1152745252?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1&controls=0" 
+                    src="https://player.vimeo.com/video/1152922114?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1&controls=0" 
                     frameBorder="0" 
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
                     style={{position:'absolute', top:0, left:0, width:'100%', height:'100%', pointerEvents:'none'}} 
