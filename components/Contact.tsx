@@ -1,6 +1,6 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal.tsx';
-import { Instagram, Phone } from 'lucide-react';
+import { Instagram, Phone, MapPin } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const handleWhatsApp = () => {
@@ -9,6 +9,13 @@ export const Contact: React.FC = () => {
 
   const handleInstagram = () => {
     window.open("https://www.instagram.com/lilica_ateliedebeleza/", "_blank");
+  };
+
+  const handleLocation = () => {
+    const element = document.getElementById('location');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -43,7 +50,7 @@ export const Contact: React.FC = () => {
 
           {/* Contact Actions - Centered, Side by Side, Subtle */}
           <Reveal>
-            <div className="flex flex-row justify-center gap-4 w-full mt-4">
+            <div className="flex flex-wrap justify-center gap-4 w-full mt-4">
               <button 
                 onClick={handleWhatsApp}
                 className="flex items-center justify-center gap-2 px-6 py-3 border border-nude-600 rounded-md hover:bg-nude-700 hover:border-gold-500/50 transition-all group w-40"
@@ -58,6 +65,14 @@ export const Contact: React.FC = () => {
               >
                 <Instagram size={18} className="text-rose-300 group-hover:text-rose-200" />
                 <span className="text-xs text-nude-300 uppercase tracking-wider group-hover:text-white">Instagram</span>
+              </button>
+
+              <button 
+                onClick={handleLocation}
+                className="flex items-center justify-center gap-2 px-6 py-3 border border-nude-600 rounded-md hover:bg-nude-700 hover:border-stone-400/50 transition-all group w-40"
+              >
+                <MapPin size={18} className="text-stone-300 group-hover:text-stone-200" />
+                <span className="text-xs text-nude-300 uppercase tracking-wider group-hover:text-white">Localização</span>
               </button>
             </div>
           </Reveal>

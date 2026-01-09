@@ -6,6 +6,7 @@ import { Addons } from './components/Addons.tsx';
 import { Bridesmaids } from './components/Bridesmaids.tsx';
 import { Gallery } from './components/Gallery.tsx';
 import { Info } from './components/Info.tsx';
+import { Location } from './components/Location.tsx';
 import { Contact } from './components/Contact.tsx';
 import { Navigation } from './components/Navigation.tsx';
 import { CartProvider } from './context/CartContext.tsx';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <Bridesmaids />
           <Gallery />
           <Info />
+          <Location />
           <Contact />
         </main>
         <CartDrawer />

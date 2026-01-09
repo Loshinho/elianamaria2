@@ -14,6 +14,7 @@ export const Navigation: React.FC = () => {
     { title: "Adicionais", href: "#addons" },
     { title: "Madrinhas", href: "#bridesmaids" },
     { title: "Informações", href: "#info" },
+    { title: "Localização", href: "#location" },
     { title: "Contato", href: "#contact" },
   ];
 
