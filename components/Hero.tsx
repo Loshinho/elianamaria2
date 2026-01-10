@@ -15,8 +15,8 @@ export const Hero: React.FC = () => {
           alt="Fundo Ateliê" 
           className="w-full h-full object-cover opacity-100"
         />
-        {/* Dark Overlays for readability - slightly adjusted for 100% opacity background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-stone-900/90" />
+        {/* Lighter Overlays for better visibility of the background image */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60" />
       </div>
 
       {/* Content */}
@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="-mt-12 md:-mt-16 mb-56 md:mb-80"
         >
-          {/* Logo - Posição mantida */}
+          {/* Logo */}
           <img 
             src="https://i.ibb.co/mrBDG8NX/1.png" 
             alt="Eliana Maria - Ateliê de Beleza" 
