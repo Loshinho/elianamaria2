@@ -67,7 +67,7 @@ export const MainPackage: React.FC = () => {
                      <span className="block text-[11px] text-nude-400 font-bold tracking-widest uppercase mb-3">Investimento para essa experiência:</span>
                      <div className="flex items-baseline justify-center md:justify-start gap-1">
                         <span className="text-sm text-nude-700 font-serif">R$</span>
-                        <span className="text-3xl md:text-4xl font-serif text-nude-800">1.200</span>
+                        <span className="text-3xl md:text-4xl font-serif text-nude-800">980</span>
                         <span className="text-sm text-nude-700 font-serif">,00</span>
                      </div>
                   </div>
