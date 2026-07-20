@@ -16,8 +16,7 @@ export const Addons: React.FC = () => {
     "Produção para casamento civil",
     "Acompanhamento até a igreja",
     "Acompanhamento até a festa (retoques)",
-    "Produção de daminhas",
-    "Pacote promocional para madrinhas"
+    "Produção de daminhas"
   ];
 
   const handleAdd = (serviceName: string) => {
